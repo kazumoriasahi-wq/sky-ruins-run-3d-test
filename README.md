@@ -1,8 +1,8 @@
 # Sky Ruins Run 3D / そらいろ遺跡ラン 3D
 
-A separate v2.0 edition of the original three-lane runner. Original eight projects and sky-ruins-run-test are preserved. No shared writes or deployments. New storage key: sky_ruins_run_3d_v1.
+A separate v2.1 edition of the original three-lane runner. Original eight projects and sky-ruins-run-test are preserved. No shared writes or deployments. New storage key: sky_ruins_run_3d_v1.
 
-Actual WebGL 3D: custom triangle-batched renderer, perspective camera following lane movement, curved elevated roads, low-poly temples/trees/floating islands, waterfalls, distance fog and directional lighting. Articulated character with running limbs, jump/slide poses, backpack/scarf/lantern companion, contact-shadow shapes, coin/powerup models and 3D celebration particles. Camera impact and a soft landing sound reinforce jumps. No third-party runtime, models, images, fonts or recorded audio.
+Actual WebGL 3D: custom triangle-batched renderer, perspective camera following lane movement, curved elevated roads, low-poly temples/trees/floating islands, waterfalls, distance fog and directional lighting. Articulated character with running limbs, jump/slide poses, backpack/scarf, contact-shadow shapes, coin/powerup models and 3D celebration particles. Camera impact and a soft landing sound reinforce jumps. No third-party runtime, models, images, fonts or recorded audio.
 
 Controls and fair-generation engine retained: swipes/buttons/arrows/WASD, jump crates/gaps, slide arches, dodge tall crystals; coin trails,8-second magnets,one-hit shields,3 per-run missions and outfit unlocks. Best450m/900m unlock next-run region selection; choosing a starting region during a run takes effect next run. Record state is independent from original edition.
 
@@ -11,3 +11,8 @@ Low-power mode reduces scenery density and caps pixel ratio at1 instead of1.5; h
 Preview: node serve.cjs,127.0.0.1:4198. Checks: node tests.cjs, node music-tests.cjs,node render-tests.cjs (29 total, including100 seeded1000m routes). context-lab.html is a local QA fixture, excluded from runtime ZIP. Runtime: index.html,style.css,engine.js,music.js,renderer.js,game.js.
 
 Physical iPhone GPU performance awaits user confirmation. No Playables SDK integration, official certification or ninth-game form update has been performed.
+
+## v2.1 — grounded adventure visuals
+Rounded, articulated runner with swinging arms, jointed legs, hair, boots and canvas backpack. Layered mountain slopes, trees, eroded rock, masonry blocks and restrained surface grain replace the earlier toy-like forms. Lower chase camera, gradual field-of-view widening, close vegetation and peripheral wind trails strengthen speed cues; reduced-motion mode suppresses camera bounce, field-of-view changes and trails. Engine speed, collision rules and stored records are unchanged. Low-power mode reduces scenery and mesh detail.
+
+Previous v2.0 is preserved locally in SKY-RUINS-RUN-3D-v2.0-backup.zip and in GitHub commit a623d7b4101c3345cc33ef5c7c9c5cdab69445f0.
