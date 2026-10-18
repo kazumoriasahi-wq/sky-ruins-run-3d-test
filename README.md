@@ -1,6 +1,6 @@
 # Sky Ruins Run 3D / そらいろ遺跡ラン 3D
 
-A separate v2.2 edition of the original three-lane runner. Original eight projects and sky-ruins-run-test are preserved. No shared writes or deployments. New storage key: sky_ruins_run_3d_v1.
+A separate v2.3 edition of the original three-lane runner. Original eight projects and sky-ruins-run-test are preserved. No shared writes or deployments. New storage key: sky_ruins_run_3d_v1.
 
 Actual WebGL 3D: custom triangle-batched renderer, perspective camera following lane movement, curved elevated roads, low-poly temples/trees/floating islands, waterfalls, distance fog and directional lighting. Articulated character with running limbs, jump/slide poses, backpack/scarf, contact-shadow shapes, coin/powerup models and 3D celebration particles. Camera impact and a soft landing sound reinforce jumps. No third-party runtime, models, images, fonts or recorded audio.
 
@@ -21,3 +21,6 @@ Previous v2.0 is preserved locally in SKY-RUINS-RUN-3D-v2.0-backup.zip and in Gi
 Every250m increases the level (LV1–7; max at1500m). Speed targets16,18.5,21,23.5,26,28.5,31m/s ramp at0.9m/s². Spawn intervals shrink48→27m plus bounded jitter; basic single-lane obstacles lead into two-lane mixed patterns with rocks fromLV3. The first three tutorial rows and an always-clear lane remain. Pattern changes apply to newly generated rows, allowing visible old rows to pass naturally. Speed-up notice and persistent level/speed/next-distance HUD support Japanese and English. Gait phase integrates distance continuously, so acceleration never snaps the pose. Larger opposing arm swing, stride, knee lift, body bounce and forward lean scale with speed; reduced motion keeps the running pose still.
 
 Checks include progression-tests.cjs (six additional checks, including100 seeds safely navigating3000m through all seven levels). motion-lab.html/js are local visual QA fixtures and excluded from runtime package. Previous v2.1 is preserved in SKY-RUINS-RUN-3D-v2.1-backup.zip and commit ad40cc2c7134447c3b8224172464ce8917fc9ec2. Saved-record key and existing projects are unchanged.
+
+## v2.3 — fifteen levels
+Level cap15 at3500m;250m steps retained. LV1–7 use the existing speed curve, then targets rise by0.75m/s each level to37m/s. Late row spacing grows with speed to retain at least0.9seconds between rows. LV9 introduces guaranteed changing safe lanes and mixed obstacle pairs; LV11 removes single-obstacle rest rows; LV13 adds periodic full-width safe-lane switches. All rows retain a clear lane and visual approach time. Saved records and original projects are unchanged. v2.2 backup: SKY-RUINS-RUN-3D-v2.2-backup.zip; source commit094493018a8834b0096a614018cb4632ca1f0f20. Updated progression tests cover100 seeded runs to5500m and the full level cap.
