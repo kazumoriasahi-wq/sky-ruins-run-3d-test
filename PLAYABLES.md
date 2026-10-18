@@ -28,7 +28,7 @@ Observed mock checks: firstFrameReady→loadData/getLanguage→gameReady; pause 
 
 ## Remaining release work
 
-1. Complete official SDK Test Suite checks with the authorized game/invite environment; preserve its results separately from mock results.
+1. Official public SDK Test Suite baseline completed on2026-10-18: MUST6/6 and SHOULD2/2 passed, including SDK order, initial size, ready order, ready signal, save size, integer score and JS heap. Cold startup measured1.209seconds; fresh active reload0.568seconds. Test controls paused/resumed/muted the game. Reload restored203m best; low-power setting triggered a valid cloud save. This test is not YouTube certification or approval. Repeat in the authorized YouTube release environment before submission.
 2. Test on physical iPhone/Android inside YouTube, including interruption, audio, cloud restore across sessions and GPU performance. Browser device emulation does not replace this.
 3. Confirm all current technical/content/accessibility requirements, performance and metadata in the authorized developer portal. No claim of full certification is made.
 4. After the user's rights confirmation and request, add the ninth game to the interest/application submission. Existing eight games and their application are unchanged here.

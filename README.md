@@ -27,3 +27,5 @@ Level cap15 at3500m;250m steps retained. LV1–7 use the existing speed curve, t
 
 ## v2.4 — YouTube Playables SDK preparation
 Official v1 SDK loading, first-frame/ready signals, cloud records with safe retry and old-save compatibility, best-distance scoreboard, authoritative host mute, full host pause/resume and SDK language integration. Browser records retain their existing key. See PLAYABLES.md for behavior, tests, official sources and remaining certification work.48 checks pass; mocked host tests are separate from official certification.
+
+Official SDK Test Suite (2026-10-18): MUST6/6 and SHOULD2/2 passed. Cold ready1.209s, fresh active reload0.568s,203m cloud best restored. Official certification/YouTube publication remain pending. Evidence: outputs/sky-ruins-run-playables-official.png in the task workspace.
